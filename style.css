@@ -1,37 +1,36 @@
-/* 1. BASIC RESET - Poori website ki margin aur padding zero karne ke liye */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    scroll-behavior: smooth; /* Dheere se scroll karne ke liye */
+    scroll-behavior: smooth;
 }
 
-/* 2. BODY - Background color aur text color */
+
 body {
-    background-color: #020205; /* Gehra kala rang */
-    color: #e2e8f0;            /* Halka safed rang */
-    overflow-x: hidden;        /* Side scroll na aaye isliye */
-}
+    background-color: #020205; 
+    color: #e2e8f0;          
+    overflow-x: hidden;        
 
-/* 3. GRADIENT TEXT - Naam ko chamkane ke liye */
+
+
 .text-gradient {
     background: linear-gradient(90deg, #a855f7, #6366f1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-/* 4. NAVIGATION BAR - Upar wala menu bar */
+
 .glass-nav {
     position: fixed; 
     top: 20px; 
     left: 50%;
-    transform: translateX(-50%); /* Center mein rakhne ke liye */
+    transform: translateX(-50%);
     width: 90%; 
     max-width: 1100px;
     padding: 15px 30px;
-    background: rgba(13, 13, 20, 0.8); /* Thoda transparent */
-    backdrop-filter: blur(15px);      /* Peeche ka dhundhla karne ke liye */
+    background: rgba(13, 13, 20, 0.8); 
+    backdrop-filter: blur(15px);      
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 50px;
     display: flex; 
@@ -41,7 +40,7 @@ body {
 }
 
 .logo { font-weight: bold; font-size: 20px; }
-.logo span { color: #a855f7; } /* Purple dot/slash */
+.logo span { color: #a855f7; } 
 
 .nav-links a {
     color: #94a3b8; 
@@ -53,7 +52,7 @@ body {
 
 .nav-links a:hover { color: #ffffff; }
 
-/* 5. HERO SECTION - Pehla bada page */
+    
 .hero {
     height: 100vh; 
     display: flex; 
@@ -87,7 +86,7 @@ body {
     margin-bottom: 40px; 
 }
 
-/* 6. BUTTONS - Click karne wale links */
+
 .btn-main {
     background: #a855f7; 
     color: white; 
@@ -108,13 +107,13 @@ body {
     margin-left: 15px;
 }
 
-/* 7. PROJECTS SECTION - Bento Grid design */
+
 .container { padding: 100px 10%; }
 
 .bento-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 barabar hisse */
-    gap: 20px; /* Boxes ke beech ki jagah */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
 }
 
 .bento-item {
@@ -126,7 +125,7 @@ body {
     transition: 0.4s;
 }
 
-/* Library Project (Jo bada dikhega) */
+
 .main-project { 
     grid-column: span 2; 
     background: linear-gradient(135deg, #0a0a10, #150825); 
@@ -134,7 +133,7 @@ body {
 }
 
 .bento-item:hover { 
-    transform: translateY(-5px); /* Upar uthne wala effect */
+    transform: translateY(-5px); 
     border-color: #a855f7; 
 }
 
@@ -153,7 +152,7 @@ body {
     font-size: 24px;
 }
 
-/* 8. FOOTER - Sabse niche wala hissa */
+
 .footer { 
     background: #050508; 
     padding: 80px 10%; 
@@ -180,10 +179,10 @@ body {
     display: inline-block;
 }
 
-/* 9. RESPONSIVE - Phone ke liye settings */
+
 @media (max-width: 900px) {
     .bento-grid { 
-        grid-template-columns: 1fr; /* Sab kuch ek ke niche ek */
+        grid-template-columns: 1fr; 
     }
     .main-project { 
         grid-column: span 1; 
@@ -198,7 +197,7 @@ body {
     }
 }
 
-/* ABOUT & ACADEMIC LAYOUT */
+
 .split-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -222,7 +221,7 @@ body {
 .time-item p { font-size: 14px; margin-bottom: 5px; }
 .time-item span { color: #888; font-size: 13px; }
 
-/* CORE ARSENAL GRID */
+
 .skill-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -252,7 +251,7 @@ body {
 
 .center { text-align: center; border-left: none !important; padding-left: 0 !important; }
 
-/* Mobile View for new sections */
+
 @media (max-width: 800px) {
     .split-layout, .skill-grid {
         grid-template-columns: 1fr;
